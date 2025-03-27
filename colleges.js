@@ -669,6 +669,7 @@ const districtData = {
         "Dr. Bhimrao Ambedkar Polytechnic",
         "G. S. R. M. College of Polytechnic",
         "Government Polytechnic Varanasi",
+"Government Girls Polytechnic Varanasi",
         "Harcourt Butler Technical University",
         "Kakori Memorial Polytechnic",
         "Krishna Institute of Engineering and Technology",
