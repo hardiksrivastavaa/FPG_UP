@@ -1,3 +1,5 @@
+var district = sessionStorage.getItem("district");
+
 var college = sessionStorage.getItem("college");
 document.getElementById("college").textContent = college;
 
@@ -27,6 +29,22 @@ document.getElementById("stdname").textContent = stdname;
 
 var enrollment = sessionStorage.getItem("enrollment");
 document.getElementById("enrollment").textContent = enrollment;
+
+var formData = {
+    "district": district,
+    "college": college,
+    "yearSem": yearSem,
+    "branch": branch,
+    "name": stdname,
+    "subject": subject,
+};
+
+fetch("https://script.google.com/macros/s/AKfycbwlE0gGAJxBF1blJRmy9b01rQQozluaNQqyYT6MygzBInmVWkd5Q6ZU_RLZKbYk-o0L/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData)
+}).catch(error => console.error("Error:", error));
 
 //Back to index.html
 function BackToIndex() {
