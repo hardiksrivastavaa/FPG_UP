@@ -34,6 +34,7 @@
 
 
         function submitForm() {
+            var district = document.getElementById("districts").value;
             var college = document.getElementById("colleges").value;
             var logo = document.getElementById("logoInput").files[0];
             var session = document.getElementById("session").value;
@@ -52,6 +53,7 @@
         // Stop further execution
     }
 
+            sessionStorage.setItem("district", district);
             sessionStorage.setItem("college", college);
             sessionStorage.setItem("session", session);
             sessionStorage.setItem("yearSem", yearSem);
