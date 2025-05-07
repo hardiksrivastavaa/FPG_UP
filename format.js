@@ -39,7 +39,7 @@ var formData = {
     "subject": subject,
 };
 
-fetch("https://script.google.com/macros/s/AKfycbwlE0gGAJxBF1blJRmy9b01rQQozluaNQqyYT6MygzBInmVWkd5Q6ZU_RLZKbYk-o0L/exec", {
+fetch("https://script.google.com/macros/s/AKfycbyf0sXmHP4F89HzQB7FF4EI9H3FjXq-9SMRlsjyQ9VMdgzO2AJnoKyAeduNjlP3AL3v/exec", {
     method: "POST",
     mode: "no-cors",
     headers: { "Content-Type": "application/json" },
